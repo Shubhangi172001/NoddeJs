@@ -1,10 +1,10 @@
 const express=require('express')
 const app=express()
 const fs=require("fs")
-// const home=fs.readFileSync("./home.html");
-// const about=fs.readFileSync("./about.html");
-// const contact=fs.readFileSync("./contact.html");
-// const service=fs.readFileSync("./services.html");
+const home=fs.readFileSync("./home.html");
+const about=fs.readFileSync("./about.html");
+const contact=fs.readFileSync("./contact.html");
+const service=fs.readFileSync("./services.html");
 app.get('/',(req,res)=>{
     res.send(home)
 })
