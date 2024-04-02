@@ -1,5 +1,6 @@
 const express=require('express')
 const app=express()
+app.use(cors())
 const fs=require("fs")
 const home=fs.readFileSync("./home.html");
 const about=fs.readFileSync("./about.html");
